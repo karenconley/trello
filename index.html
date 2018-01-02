@@ -3,27 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trello</title>
+	<!-- CSS -->
 	<link rel="stylesheet" href="../trello/assets/css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
 <body>
+	<!-- menú -->
+	<header>
+		<nav>
+			<!-- botón y search izquierda -->
+			<div class="izqMenu">
+				<button class="botonTableros faBtn"><i class="fa fa-trello" aria-hidden="true"></i><p>Tableros</p></button>
+				<input class="search" type="text"><i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+			<!-- logo al medio -->
+			<div class="logo">
+				<img id="trello" src="assets/img/Trello_logo.png" alt="">
+			</div>
+			<!-- botones derecha -->
+			<!-- aquí agregar botones derecha -->
+			</div>
+		</nav>
+	</header>
 
-<!-- menú fixed -->
-	<nav>
-		<div class="barra">
-			<h2>Trello</h2>
+	<!-- tablero - reto de código - privado-->
+	<section class="menu2">
+		<div class="secondMenu">
+			<!-- izquierda -->
+			<div class="izq" >
+				<h4>Tablero - Reto de Código</h4>
+				<i id="star" class="fa fa-star-o" aria-hidden="true"></i>
+				<i id="lock" class="fa fa-lock" aria-hidden="true"></i>
+				<h5>Privado</h5>
+			</div>
+			<!-- derecha -->
+			<div class="der">
+				<i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+				<a href="#">Mostrar menú</a>
+			</div>
 		</div>
-	</nav>
-
-	<section class="cuerpo">
-		<div id="caja">
-        	<input type="text" id="txt" value="Añadir una lista... ">
-        </div>
-        <form>
-            <input type="submit" id="btn" name="" value="Guardar">
-        </form>
-
-	    <!-- contenedor vacío (comentarios) -->
-		<div id="cont"></div>
 	</section>
+
+<!-- tableros -->
+	<section class="tableros">
+		<div id="cont"></div>
+		<div class="newList">Añadir una lista...</div>
+		<div class="caja">
+			<input placeholder="Añadir una lista..." id="addList"><button class="saveButton">Guardar</button><icon class="fa fa-times"></icon>
+		</div>
+	</section>
+
+
+
+	<script src="assets/js/app.js"></script>
+	<script src="https://use.fontawesome.com/7dd215a775.js"></script>
+
 </body>
 </html>

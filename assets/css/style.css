@@ -1,41 +1,189 @@
-/*TRELLO*/
+*{
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
 
 body{
-	margin: 0 auto;
+background-color: #1C7AB7;
 }
 
-nav{
-	background: #176793;
-	width: 100%;
-	height: 70px;
-	position: fixed;
-	z-index: 1000;
-}
-
-.barra h2{
+/*HEADER*/
+header{
+	background: #176597;
+	color: #FFF;
 	text-align: center;
-	color: #5491B2;
 }
 
-.cuerpo{
-	background-color: #1C7AB7; 
-	width: 100%;
-	height: 675px;
+header div{
+	display: inline-block;
 }
 
-#txt{
-    background-color: #147aa6;
+/*"tableros"*/
+.izqMenu{
+	background-color: #5491B4;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	color: #FFF;
+	border-radius: 2px;
+	font-size: 25px;
+
+}
+
+.izqMenu .fa-trello{
+	margin: 5px 10px;
+	vertical-align: middle;
+}
+
+.izqMenu p{
+	display: inline-block;
+	font-size: 18px;
+}
+
+/*botón tableros*/
+.botonTableros i{
+	font-size: 18px;
+	margin-right: 10px;
+	padding-left: 0px;
+	line-height: 12px;
+}
+
+.botonTableros p{
+	display: inline-block;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 12px;
+	font-size: 14px;
+}
+
+/*search*/
+.search {
+	background-color: #66A4C7;
 	color: #fff;
-    font-size: 14px;
-    padding: 20px;
-	width: 350px;
-    border: none; 
-    margin-top: 80px;   
+	border: none;
+	border-radius: 3px;
+	padding: 8px 12px;
+	margin:5px;
+}
+
+#logo{ /*logo trello*/
+	position: relative;
+	margin-left: 250px;
+	top: 10px;
+	display: inline-block;
+}
+
+.faBtn {
+	background-color: #66A4C7;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	padding: 8px 12px;
+	margin:5px;
+}
+
+
+
+/*SECTION: TABLERO - RETO */
+.menu2 {
+	margin-left: 15px;
+	padding: 10px;
+	height: 40px;
+	color: #FFF;
+}
+
+#star {
+	margin-left: 230px;
+	top: -20px;
+	position: relative;
+}
+
+#lock {
+	position: relative;
+	top: -20px;
+	margin-left: 20px;
+}
+
+h5{
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	margin-left: 20px;
+}
+
+.der {
+	margin-left: 1250px;
+	display: inline-block;
+	position: relative;
+	top: -40px;
+}
+
+.der a {
+	padding-left: 10px;
+	color: #FFF;
+	font-size: 15px;
+}
+
+
+
+/*SECTION: LISTAS*/
+.tableros{
+	height: 530px;
+}
+
+#cont {
+	display: none;
+	width: 263px;
+	padding: 2px;
+	border-radius: 5px;
+	background-color: red;
+	font-size: 14px;
+	float: left;
 }
 
 form {
-    width: 400px;
-    background-color: #e8e8eb;
-    margin: 0px;
-    padding: 5px;
+	margin-top: 20px;
+	background-color: #176597;
+	color: #70A3C2;
+	width: 320px;
+	height: 35px;
+	margin-left: 10px;
+	text-align: left;
+	border-radius: 2px;
+}
+
+.caja {
+	margin: 10px;
+	width: 320px;
+	height: 80px;
+	padding: 4px;
+	border-radius: 2px;
+	background-color: #E1E0E7;
+	display: inline-block;
+}
+
+input {
+	width: 310px;
+	height: 30px;
+	border-radius: 2px;
+	background-color: #D1D3D9;
+	color: #B7B9BF;
+	border: 1px solid #B7B9BF;
+	font-size: 12px;
+}
+
+#saveButton {
+	background-color: #60B048;
+	outline: none;
+	color: #FFF;
+	border-radius: 4px;
+	width: 75px;
+	height: 28px;
+}
+
+#closeButton {
+	background-color: transparent;
+	border: none;
+	color: #B7B9BF;
+	font-size: 25px;
 }

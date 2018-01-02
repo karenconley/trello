@@ -1,14 +1,43 @@
-function add(){
-//añadimos el texto que el usuario ingresa en el textarea:
-var comments = document.getElementById('txt').value;
-//se limpia el text area después de que se postea el mensaje:
+// VARIABLES
+
+var input = document.getElementById('in');
+var input2 = document.getElementsByClassName('caja')[0];
+var close = document.getElementById('closeButton');
+var btn = document.getElementById('saveButton');
+var cont2 = document.getElementById('cont');
+
+//Agregando Evento click para cambiar submit de boton a input
+
+input.addEventListener('click', function(){
+	input.classList.add('caja');
+	input2.classList.remove('caja');
+});
+
+// Agregando Evento close, para cambiar de input a boton
+
+close.addEventListener('click', function(){
+	input2.classList.add('caja');
+	input.classList.remove('caja');
+});
+
+// Agregando lista
+btn.addEventListener('click', function(){
+	cont2.classList.remove('caja');
+//rescatar el texto que ingresara el usuario
+var text = document.getElementById('txt').value;
+text.textContent = text; //escribe el contenido de la lista
+//limpiar input
 document.getElementById('txt').value = '';
-//se llama al contenedor vacío que 'guardará' los posts:
-var post = document.getElementById('cont');
-//se crea un div que contenga los comentarios:
-var newComments = document.createElement('caja');
-//no ingresar texto vacío:
-if(comments.length == 0 || comments == null){
-	alert('Ingresa un mensaje');
-	return false;
-	}
+
+//creando Nodos
+
+var textN = document.createTextNode(txt);
+var newList = document.createElement('div');
+var textList = document.createElement('p');
+
+
+textList.appendChild(textN);
+newList.appendChild(textList);
+cont.appendChild(newList);
+
+});
